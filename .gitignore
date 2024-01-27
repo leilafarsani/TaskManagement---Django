@@ -1,0 +1,48 @@
+# Django specific
+*.log
+*.pot
+*.pyc
+__pycache__/
+db.sqlite3
+db.sqlite3-journal
+media
+
+# Migration files
+migrations/
+*.pyc
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# macOS specific
+.DS_Store
+
+# Windows specific
+Thumbs.db
+
+# PyCharm
+.idea/
+
+# VSCode
+.vscode/
+
+# React specific
+node_modules/
+/build/
+
+# npm & yarn
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Compiled static files
+staticfiles/
+
+# Bower
+bower_components/
