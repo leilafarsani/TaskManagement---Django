@@ -16,13 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
-from . import views
+from backend import views  # Import views from your 'backend' app
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
-    path("backend/", include('backend.urls')),
-    path('', views.home, name='home'),
+    path("admin/", admin.site.urls),  # Admin site URL
+    path("backend/", include('backend.urls')),  # Includes URL patterns from the 'backend' app
+    path("", views.home, name='home'),  # Project-wide URL for home page
 ]
-from django.urls import path
-from . import views
+
 
