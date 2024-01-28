@@ -22,7 +22,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),  # Admin site URL
     path("backend/", include('backend.urls')),  # Includes URL patterns from the 'backend' app
     path("", views.home, name='home'),  # Project-wide URL for home page
-    path('tasks/', views.task_list),
+    path('api/tasks/', views.create_task, name='create_task'),
 ]
 
 
